@@ -1,0 +1,44 @@
+{
+  "results": {
+    "banned_strings_zero": true,
+    "bgm_not_lofi": true,
+    "responsive_overflow": true,
+    "passcode_1809_unlock": true,
+    "title_exact_match": true,
+    "letter_exact_match": true,
+    "word_limits_compliant": true,
+    "animations_active": true,
+    "console_errors_zero": true,
+    "external_requests_zero": true
+  },
+  "wordCounts": {
+    "screen1Title": 4,
+    "screen2Title": 4,
+    "screen3Title": 4,
+    "screen4Title": 4,
+    "screen5Title": 4,
+    "startBtn": 3,
+    "holdBtn": 3,
+    "sendHeartBtn": 3,
+    "vouchers": [
+      {
+        "front": 4,
+        "back": 8
+      },
+      {
+        "front": 4,
+        "back": 8
+      },
+      {
+        "front": 4,
+        "back": 8
+      },
+      {
+        "front": 3,
+        "back": 8
+      }
+    ]
+  },
+  "consoleErrors": [],
+  "externalRequests": []
+}

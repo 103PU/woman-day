@@ -1,0 +1,9 @@
+node_modules
+tests
+qa
+image
+.git
+server.js
+package.json
+package-lock.json
+*.log

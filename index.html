@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+  <title>Dành Tặng Công Chúa Dương Nguyễn Hạ Vy 💖 20/10</title>
+  <meta name="description" content="Trang web chúc mừng 20/10 ngọt ngào dành riêng cho công chúa Dương Nguyễn Hạ Vy">
+  <meta name="theme-color" content="#0f0822">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chúc Mừng 20/10 Công Chúa Hạ Vy 💖">
+  <meta property="og:description" content="Món quà nhỏ xinh gửi công chúa Dương Nguyễn Hạ Vy.">
+  <meta property="og:image" content="assets/photos/thumb/vy-01.jpg">
+  <meta property="og:type" content="website">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌹</text></svg>">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/neon.css">
+  <link rel="stylesheet" href="css/glass.css">
+  <link rel="stylesheet" href="css/garden.css">
+</head>
+<body>
+
+  <!-- Phone Mockup Container (Mobile-First Frame) -->
+  <main id="app">
+
+    <!-- 1. MULTI-LAYER BACKGROUND -->
+    <div id="bgStack">
+      <video id="bgVideo" muted playsinline autoplay loop poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100'%3E%3Crect width='100%25' height='100%25' fill='%230f0822'/%3E%3C/svg%3E">
+        <source src="assets/video/bg.mp4" type="video/mp4">
+      </video>
+      <canvas id="bgCanvas"></canvas>
+      <div class="bg-overlay"></div>
+
+      <!-- Parallax Glowing Flowers -->
+      <svg class="bg-par-flower bg-flower-1" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="38" fill="url(#pGrad1)" />
+        <defs>
+          <radialGradient id="pGrad1" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff7da7" stop-opacity="0.8" />
+            <stop offset="100%" stop-color="#e040fb" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+      </svg>
+      <svg class="bg-par-flower bg-flower-2" viewBox="0 0 100 100" fill="none">
+        <circle cx="50" cy="50" r="44" fill="url(#pGrad2)" />
+        <defs>
+          <radialGradient id="pGrad2" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#8fd3ff" stop-opacity="0.7" />
+            <stop offset="100%" stop-color="#7c4dff" stop-opacity="0" />
+          </radialGradient>
+        </defs>
+      </svg>
+
+      <canvas id="particleCanvas"></canvas>
+    </div>
+
+    <!-- 2. FIXED TOP HEADER -->
+    <header id="topHeader">
+      <div class="brand-badge">
+        <span class="badge-icon">
+          <svg viewBox="0 0 32 32" fill="none" class="svg-icon-3d" style="width: 17px; height: 17px;">
+            <circle cx="16" cy="7" r="5" fill="#ff7da7" />
+            <circle cx="23" cy="12" r="5" fill="#ff7da7" />
+            <circle cx="20" cy="21" r="5" fill="#ff7da7" />
+            <circle cx="12" cy="21" r="5" fill="#ff7da7" />
+            <circle cx="9" cy="12" r="5" fill="#ff7da7" />
+            <circle cx="16" cy="15" r="4" fill="#fbbf24" />
+          </svg>
+        </span>
+        <span>20 · 10</span>
+      </div>
+      <button id="musicToggleBtn" class="music-toggle" aria-label="Bật/Tắt nhạc" title="Bật/Tắt nhạc">
+        <span class="music-icon">
+          <svg viewBox="0 0 24 24" fill="none" class="svg-icon" style="width: 17px; height: 17px;">
+            <path d="M12 3v12.5a3.5 3.5 0 1 1-2.5-3.4V7h9v3.5a3.5 3.5 0 1 1-2.5-3.4V3H12z" fill="#ff7da7"/>
+          </svg>
+        </span>
+        <span class="music-wave"></span>
+      </button>
+    </header>
+
+    <!-- 3. INTERACTIVE SCREENS CONTAINER -->
+    <div id="screensContainer">
+
+      <!-- ==================== SCREEN 1: INTRO ==================== -->
+      <section id="screen1" class="screen active">
+        <h1 class="screen-title">Tháng Mười <em>dịu dàng.</em></h1>
+
+        <!-- Breathing Glowing Rose Bouquet -->
+        <div class="intro-bouquet">
+          <svg viewBox="0 0 200 240" fill="none" style="width: 100%; height: 100%;">
+            <path d="M70 140 L100 220 L130 140 Z" fill="#ffd5df" stroke="#ffb3c6" stroke-width="2" />
+            <path d="M85 200 L100 225 L115 200" stroke="#f472b6" stroke-width="3" stroke-linecap="round" />
+            <path d="M88 175 Q100 185 112 175 Q100 165 88 175" fill="#f43f5e" />
+            <circle cx="100" cy="175" r="5" fill="#ffe4e6" />
+            <!-- Glowing Roses -->
+            <circle cx="100" cy="100" r="24" fill="url(#roseGrad1)" />
+            <path d="M92 92 Q100 82 108 92 Q100 104 92 92" fill="#fda4af" />
+            <circle cx="70" cy="115" r="20" fill="url(#roseGrad1)" />
+            <circle cx="130" cy="115" r="20" fill="url(#roseGrad1)" />
+            <circle cx="82" cy="74" r="18" fill="url(#roseGrad2)" />
+            <circle cx="118" cy="74" r="18" fill="url(#roseGrad2)" />
+            <!-- Sparkles -->
+            <circle cx="55" cy="80" r="3" fill="#ffe4e6" opacity="0.9" />
+            <circle cx="145" cy="85" r="2.5" fill="#ffe4e6" opacity="0.9" />
+            <circle cx="100" cy="45" r="4" fill="#fff" opacity="0.9" />
+            <defs>
+              <radialGradient id="roseGrad1" cx="40%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#ffe4e6" />
+                <stop offset="50%" stop-color="#fb7185" />
+                <stop offset="100%" stop-color="#e11d48" />
+              </radialGradient>
+              <radialGradient id="roseGrad2" cx="40%" cy="40%" r="60%">
+                <stop offset="0%" stop-color="#fff1f2" />
+                <stop offset="60%" stop-color="#f43f5e" />
+                <stop offset="100%" stop-color="#be123c" />
+              </radialGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <button id="startJourneyBtn" class="btn-primary">
+          <span>Mở quà nhé</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" class="svg-icon" style="width: 17px; height: 17px;"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+        </button>
+      </section>
+
+      <!-- ==================== SCREEN 2: CHƯƠNG 01 - MẬT MÃ ==================== -->
+      <section id="screen2" class="screen">
+        <div class="chapter-badge">01 / 04</div>
+        <h2 class="screen-title">Mật mã <em>nhỏ xinh.</em></h2>
+
+        <!-- 4 PIN Dots -->
+        <div class="passcode-dots">
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+          <div class="dot"></div>
+        </div>
+
+        <!-- Glassmorphism Numpad -->
+        <div class="numpad">
+          <button class="num-btn" data-val="1">1</button>
+          <button class="num-btn" data-val="2">2</button>
+          <button class="num-btn" data-val="3">3</button>
+          <button class="num-btn" data-val="4">4</button>
+          <button class="num-btn" data-val="5">5</button>
+          <button class="num-btn" data-val="6">6</button>
+          <button class="num-btn" data-val="7">7</button>
+          <button class="num-btn" data-val="8">8</button>
+          <button class="num-btn" data-val="9">9</button>
+          <button class="num-btn btn-text" data-val="del" aria-label="Xóa">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><path d="M21 4H8l-7 8 7 8h13a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/><line x1="18" y1="9" x2="12" y2="15"/><line x1="12" y1="9" x2="18" y2="15"/></svg>
+          </button>
+          <button class="num-btn" data-val="0">0</button>
+          <button class="num-btn btn-text" aria-label="Đóa hoa">
+            <svg viewBox="0 0 32 32" fill="none" class="svg-icon-3d">
+              <defs>
+                <radialGradient id="kpRose" cx="35%" cy="35%" r="65%">
+                  <stop offset="0%" stop-color="#fff1f2"/>
+                  <stop offset="40%" stop-color="#f43f5e"/>
+                  <stop offset="100%" stop-color="#881337"/>
+                </radialGradient>
+              </defs>
+              <circle cx="16" cy="16" r="10" fill="url(#kpRose)"/>
+              <path d="M16 9c-2.5 0-4.5 2-4.5 4.5s2.5 4.5 4.5 6.5c2-2 4.5-4 4.5-6.5s-2-4.5-4.5-4.5z" fill="#fda4af" opacity="0.8"/>
+            </svg>
+          </button>
+        </div>
+
+        <div class="passcode-hint-chip">Kỉ niệm ngày yêu nhau</div>
+        <button id="rescueCodeBtn" class="rescue-btn-icon" aria-label="Mở khóa giúp">
+          <svg viewBox="0 0 24 24" fill="none" class="svg-icon">
+            <defs>
+              <linearGradient id="keyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fef08a"/>
+                <stop offset="60%" stop-color="#eab308"/>
+                <stop offset="100%" stop-color="#a16207"/>
+              </linearGradient>
+            </defs>
+            <path d="M15 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" fill="url(#keyGrad)"/>
+            <path d="M11 11v8l3-1.5 2 1.5V16h2v-3h-7z" fill="url(#keyGrad)"/>
+            <circle cx="11" cy="7" r="1.5" fill="#fff" opacity="0.7"/>
+          </svg>
+        </button>
+      </section>
+
+      <!-- ==================== SCREEN 3: CHƯƠNG 02 - PHÉP MÀU ==================== -->
+      <section id="screen3" class="screen">
+        <div class="chapter-badge">02 / 04</div>
+        <h2 class="screen-title">Một chút <em>phép màu.</em></h2>
+
+        <!-- Floating 3D Gift Box -->
+        <div class="gift-container">
+          <svg id="giftBoxSvg" class="gift-svg" viewBox="0 0 200 200" fill="none">
+            <rect x="35" y="70" width="130" height="105" rx="16" fill="url(#giftBodyGrad)" />
+            <rect x="88" y="70" width="24" height="105" fill="#fde047" opacity="0.9" />
+            <rect x="25" y="52" width="150" height="28" rx="8" fill="url(#giftLidGrad)" />
+            <rect x="88" y="52" width="24" height="28" fill="#fef08a" />
+            <path d="M72 40 C55 20, 85 10, 95 45 C105 10, 135 20, 118 40 C110 50, 80 50, 72 40 Z" fill="#facc15" />
+            <circle cx="95" cy="44" r="7" fill="#fef08a" />
+            <defs>
+              <linearGradient id="giftBodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f472b6" />
+                <stop offset="100%" stop-color="#db2777" />
+              </linearGradient>
+              <linearGradient id="giftLidGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#fb7185" />
+                <stop offset="100%" stop-color="#e11d48" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <!-- Press and Hold Button with progress bar -->
+        <div id="holdGiftBtn" class="hold-btn-wrapper">
+          <div id="holdProgressBar" class="hold-progress-bar"></div>
+          <div id="holdBtnText" class="hold-btn-text">
+            <span>Giữ mở quà</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SCREEN 4: CHƯƠNG 03 - LÁ THƯ ==================== -->
+      <section id="screen4" class="screen">
+        <div class="chapter-badge">03 / 04</div>
+        <h2 class="screen-title">Lá thư gửi <em>Em.</em></h2>
+
+        <!-- Wax Sealed Pink Envelope with Heartbeat Pulse -->
+        <div id="letterEnvelope" class="envelope-wrapper" title="Chạm phong bì để đọc thư">
+          <svg class="envelope-svg" viewBox="0 0 280 190" fill="none">
+            <rect x="10" y="10" width="260" height="170" rx="16" fill="#f472b6" />
+            <path d="M10 180 L140 100 L270 180 Z" fill="#ec4899" />
+            <path d="M10 10 L140 100 L10 180 Z" fill="#db2777" opacity="0.3" />
+            <path d="M270 10 L140 100 L270 180 Z" fill="#db2777" opacity="0.3" />
+            <path class="envelope-flap" d="M10 10 L140 115 L270 10 Z" fill="#fb7185" />
+          </svg>
+          <div class="envelope-seal">♡</div>
+        </div>
+
+        <!-- Letter Sliding Modal (Parchment & Neon Title) -->
+        <div id="letterModal" class="letter-modal">
+          <div class="letter-sheet">
+            <!-- EXACT NEON TITLE REQUIRED BY TICKET -->
+            <h3 id="letterNeonTitle" class="neon-title">Chúc Mừng Ngày Của Công Chúa Đáng Iu</h3>
+
+            <!-- EXACT TYPEWRITER LETTER TEXT REQUIRED BY TICKET -->
+            <div id="letterBodyText" class="letter-body"></div>
+
+            <div class="letter-actions">
+              <button id="skipTypewriterBtn" class="btn-secondary" style="font-size: 13px; align-self: center;">
+                <span>Xem ngay</span>
+              </button>
+              <button id="letterContinueBtn" class="btn-primary" style="display: none; align-self: center;">
+                <span>Tiếp tục</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" class="svg-icon" style="width: 17px; height: 17px;"><path d="M7 17L17 7M17 7H9M17 7V15"/></svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ==================== SCREEN 5: CHƯƠNG 04 - FINALE & GARDEN ==================== -->
+      <section id="screen5" class="screen">
+
+        <!-- Block 1: Hero Finale -->
+        <div class="finale-hero">
+          <div class="chapter-badge" style="justify-content: center;">
+            <span>HAPPY VIETNAMESE WOMEN'S DAY</span>
+          </div>
+          <h2 class="screen-title" style="font-size: 26px; margin-bottom: 18px;">Đóa hoa <em>rất riêng.</em></h2>
+        </div>
+
+        <!-- Block 2: 3 Wishes Chips -->
+        <div class="wish-chips">
+          <button class="wish-chip" data-wish="peace">
+            <span class="wish-icon"></span>
+            <span class="wish-name">Bình an</span>
+          </button>
+          <button class="wish-chip" data-wish="radiant">
+            <span class="wish-icon"></span>
+            <span class="wish-name">Rạng rỡ</span>
+          </button>
+          <button class="wish-chip" data-wish="happy">
+            <span class="wish-icon"></span>
+            <span class="wish-name">Hạnh phúc</span>
+          </button>
+        </div>
+
+        <!-- Block 3: Sweet Button & Replay -->
+        <div class="sweet-actions-row">
+          <button id="sweetBtn" class="btn-primary" style="padding: 11px 20px; font-size: 14px;">
+            <span>Chút ngọt ngào</span>
+            <svg viewBox="0 0 36 36" fill="none" class="svg-icon-3d" style="width: 22px; height: 22px;">
+              <path d="M18 14c-3-6-10-8-13-4s-2 10 4 12l9-8z" fill="#93c5fd"/>
+              <path d="M18 20c-2 3-6 7-9 5s-2-6 3-7l6 2z" fill="#3b82f6" opacity="0.85"/>
+              <path d="M18 14c3-6 10-8 13-4s2 10-4 12l-9-8z" fill="#e9d5ff"/>
+              <path d="M18 20c2 3 6 7 9 5s2-6-3-7l-6 2z" fill="#c084fc" opacity="0.85"/>
+              <ellipse cx="18" cy="18" rx="1.6" ry="7.5" fill="#2e1065"/>
+            </svg>
+          </button>
+          <button id="replayBtn" class="btn-secondary" style="padding: 9px 16px;">
+            <span>Xem lại</span>
+            <svg viewBox="0 0 24 24" fill="none" class="svg-icon" style="width: 16px; height: 16px;">
+              <path d="M3 12a9 9 0 1 0 2.5-6.2L2 9" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M2 3v6h6" stroke="#c4b5fd" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Block 4: Cosmic Memories 3D Gallery -->
+        <div class="cosmic-gallery-card">
+          <div class="cosmic-header">
+            <div class="cosmic-tag">COSMIC MEMORIES • 20/10</div>
+            <h3 class="cosmic-title">Khoảnh khắc dễ thương</h3>
+          </div>
+
+          <div id="cosmicStage" class="cosmic-stage">
+            <div class="cosmic-planet">
+              <span>20 • 10</span>
+            </div>
+            <div id="carouselRing" class="carousel-ring"></div>
+          </div>
+
+          <div class="cosmic-controls">
+            <button id="prevPhotoBtn" class="nav-arrow" aria-label="Ảnh trước">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="15 18 9 12 15 6"/></svg>
+            </button>
+            <div id="cosmicStatusText" class="cosmic-status-text">1 / 15</div>
+            <button id="nextPhotoBtn" class="nav-arrow" aria-label="Ảnh kế">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" class="svg-icon"><polyline points="9 18 15 12 9 6"/></svg>
+            </button>
+            <button id="zoomPhotoBtn" class="nav-arrow" style="margin-left: 8px;" aria-label="Phóng to">
+              <svg viewBox="0 0 24 24" fill="none" class="svg-icon">
+                <circle cx="10.5" cy="10.5" r="7" stroke="#ffd5e2" stroke-width="2.5"/>
+                <path d="M16 16l5.5 5.5" stroke="#ff7da7" stroke-width="3" stroke-linecap="round"/>
+                <path d="M10.5 7.5v6M7.5 10.5h6" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+
+        <!-- Block 5: Love Countdown Timer -->
+        <div class="countdown-section">
+          <div class="countdown-title">Bên nhau ♡</div>
+          <div class="countdown-grid">
+            <div class="countdown-box">
+              <span id="countDays" class="countdown-num">0</span>
+              <span class="countdown-label">Ngày</span>
+            </div>
+            <div class="countdown-box">
+              <span id="countHours" class="countdown-num">00</span>
+              <span class="countdown-label">Giờ</span>
+            </div>
+            <div class="countdown-box">
+              <span id="countMinutes" class="countdown-num">00</span>
+              <span class="countdown-label">Phút</span>
+            </div>
+            <div class="countdown-box">
+              <span id="countSeconds" class="countdown-num">00</span>
+              <span class="countdown-label">Giây</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Block 6: Princess Vouchers 3D Flip -->
+        <div class="vouchers-section">
+          <h3 class="vouchers-title">Voucher của Công Chúa</h3>
+          <div id="vouchersGrid" class="vouchers-grid"></div>
+        </div>
+
+        <!-- Block 7: Procedural 3D Garden -->
+        <div id="gardenContainer">
+          <div class="garden-badge">Vườn hoa tặng Em</div>
+          <canvas id="garden3dCanvas"></canvas>
+
+          <!-- Fallback SVG Vector Garden -->
+          <svg id="gardenSvgFallback" viewBox="0 0 360 220" preserveAspectRatio="xMidYMax meet">
+            <defs>
+              <linearGradient id="svgStemGrad" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#4ade80" />
+                <stop offset="100%" stop-color="#166534" />
+              </linearGradient>
+              <linearGradient id="svgTulipGrad1" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#f472b6" />
+                <stop offset="100%" stop-color="#be185d" />
+              </linearGradient>
+              <linearGradient id="svgTulipGrad2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="#fef08a" />
+                <stop offset="100%" stop-color="#f59e0b" />
+              </linearGradient>
+              <linearGradient id="svgHydrGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#a78bfa" />
+                <stop offset="100%" stop-color="#38bdf8" />
+              </linearGradient>
+            </defs>
+            <g class="flower-stem" style="transform-origin: 80px 220px;">
+              <path d="M80 220 Q75 160 80 120" stroke="url(#svgStemGrad)" stroke-width="4" fill="none" />
+              <circle cx="80" cy="115" r="28" fill="url(#svgHydrGrad)" opacity="0.9" />
+              <circle cx="70" cy="105" r="14" fill="#c4b5fd" opacity="0.8" />
+              <circle cx="92" cy="110" r="15" fill="#7dd3fc" opacity="0.8" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 280px 220px;">
+              <path d="M280 220 Q285 160 280 120" stroke="url(#svgStemGrad)" stroke-width="4" fill="none" />
+              <circle cx="280" cy="115" r="28" fill="url(#svgHydrGrad)" opacity="0.9" />
+              <circle cx="270" cy="105" r="14" fill="#c4b5fd" opacity="0.8" />
+              <circle cx="292" cy="110" r="15" fill="#7dd3fc" opacity="0.8" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 140px 220px;">
+              <path d="M140 220 Q135 150 140 100" stroke="url(#svgStemGrad)" stroke-width="4" fill="none" />
+              <circle cx="140" cy="95" r="22" fill="#fb7185" />
+              <path d="M130 90 Q140 80 150 90 Q140 102 130 90" fill="#f43f5e" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 220px 220px;">
+              <path d="M220 220 Q225 150 220 100" stroke="url(#svgStemGrad)" stroke-width="4" fill="none" />
+              <circle cx="220" cy="95" r="22" fill="#f43f5e" />
+              <path d="M210 90 Q220 80 230 90 Q220 102 210 90" fill="#fda4af" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 40px 220px;">
+              <path d="M40 220 Q35 170 40 135" stroke="url(#svgStemGrad)" stroke-width="3" fill="none" />
+              <path d="M30 140 Q40 115 50 140 Q40 152 30 140 Z" fill="url(#svgTulipGrad1)" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 180px 220px;">
+              <path d="M180 220 Q180 160 180 130" stroke="url(#svgStemGrad)" stroke-width="3.5" fill="none" />
+              <path d="M168 135 Q180 108 192 135 Q180 150 168 135 Z" fill="url(#svgTulipGrad2)" />
+            </g>
+            <g class="flower-stem" style="transform-origin: 320px 220px;">
+              <path d="M320 220 Q325 170 320 135" stroke="url(#svgStemGrad)" stroke-width="3" fill="none" />
+              <path d="M310 140 Q320 115 330 140 Q320 152 310 140 Z" fill="url(#svgTulipGrad1)" />
+            </g>
+          </svg>
+        </div>
+
+        <!-- Block 8: Finale End -->
+        <div class="finale-end">
+          <div id="crownIcon" class="crown-icon" title="Chạm 3 lần để mở thư mật">
+            <svg viewBox="0 0 44 44" fill="none" class="svg-icon-crown">
+              <defs>
+                <linearGradient id="crGoldEnd" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#fef08a"/>
+                  <stop offset="50%" stop-color="#eab308"/>
+                  <stop offset="100%" stop-color="#854d0e"/>
+                </linearGradient>
+              </defs>
+              <rect x="6" y="30" width="32" height="4.5" rx="2.5" fill="url(#crGoldEnd)"/>
+              <path d="M6 30L9 14L16 22L22 8L28 22L35 14L38 30H6Z" fill="url(#crGoldEnd)"/>
+              <circle cx="9" cy="14" r="2.8" fill="#fff"/>
+              <circle cx="22" cy="8" r="3.5" fill="#fff"/>
+              <circle cx="35" cy="14" r="2.8" fill="#fff"/>
+            </svg>
+          </div>
+          <div class="end-love-text">Anh iu công chúa</div>
+          <button id="sendHeartBtn" class="btn-primary" style="padding: 13px 26px;">
+            <span>Gửi tim anh</span>
+            <svg viewBox="0 0 32 32" fill="none" class="svg-icon-3d" style="width: 20px; height: 20px;">
+              <path d="M16 27.5l-2.1-1.9C6.4 18.9 1.5 14.5 1.5 8.9 1.5 4.4 5 1 9.5 1c2.5 0 5 1.2 6.5 3.1C17.5 2.2 20 1 22.5 1 27 1 30.5 4.4 30.5 8.9c0 5.6-4.9 10-12.4 16.7L16 27.5z" fill="#fff"/>
+            </svg>
+          </button>
+        </div>
+
+      </section>
+
+    </div>
+
+    <!-- 4. FIXED BOTTOM FOOTER (1 TINY LINE) -->
+    <footer id="bottomFooter">
+      <span>20 · 10 ♡ WITH LOVE</span>
+    </footer>
+
+    <!-- 5. TOAST NOTIFICATION -->
+    <div id="toastBox"></div>
+
+    <!-- 6. FULLSCREEN LIGHTBOX -->
+    <div id="lightboxModal">
+      <button id="lightboxCloseBtn" class="lightbox-close-btn" aria-label="Đóng">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="svg-icon" style="width: 18px; height: 18px;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightboxImg" class="lightbox-img" src="" alt="Khoảnh khắc Hạ Vy">
+        <div id="lightboxCaption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- 7. EASTER EGG SECRET MODAL -->
+    <div id="secretModal">
+      <div class="secret-card">
+        <div style="margin-bottom: 12px; display: flex; justify-content: center;">
+          <svg viewBox="0 0 44 44" fill="none" class="svg-icon-crown">
+            <rect x="6" y="30" width="32" height="4.5" rx="2.5" fill="#eab308"/>
+            <path d="M6 30L9 14L16 22L22 8L28 22L35 14L38 30H6Z" fill="#facc15"/>
+            <circle cx="9" cy="14" r="2.8" fill="#fff"/>
+            <circle cx="22" cy="8" r="3.5" fill="#fff"/>
+            <circle cx="35" cy="14" r="2.8" fill="#fff"/>
+          </svg>
+        </div>
+        <h4 style="font-family: var(--font-serif); font-size: 20px; color: var(--primary-pink-light); margin-bottom: 14px;">
+          Thư Mật Dành Riêng Cho Hạ Vy
+        </h4>
+        <p id="secretText" style="font-size: 14px; line-height: 1.7; color: #fff; margin-bottom: 22px; white-space: pre-wrap;"></p>
+        <button id="closeSecretBtn" class="btn-secondary" style="font-size: 13px;">
+          Đóng thư mật
+        </button>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Scripts -->
+  <script src="js/config.js"></script>
+  <script src="js/icons.js"></script>
+  <script src="js/vendor/three.min.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/particles.js"></script>
+  <script src="js/carousel3d.js"></script>
+  <script src="js/garden3d.js"></script>
+  <script src="js/countdown.js"></script>
+  <script src="js/ui-extras.js"></script>
+  <script src="js/flow.js"></script>
+
+  <!-- Bootstrap -->
+  <script>
+    document.addEventListener('DOMContentLoaded', async () => {
+      const aurora = new BackgroundAurora('bgCanvas');
+      const particleFX = new ParticleFX('particleCanvas');
+      const audioManager = new AudioManager();
+      const flowManager = new FlowManager(audioManager, particleFX);
+      const countdown = new LoveCountdown(window.APP_CONFIG.LOVE_START_DATE);
+      const uiExtras = new UIExtras(particleFX);
+      const garden = new GardenManager('gardenContainer');
+
+      try {
+        const resp = await fetch('js/photos.json');
+        const photos = await resp.json();
+        const carousel = new CosmicCarousel(photos, 'cosmicStage');
+      } catch (err) {
+        console.warn('Lỗi tải danh sách ảnh:', err);
+      }
+
+      const bgVid = document.getElementById('bgVideo');
+      if (bgVid) {
+        bgVid.addEventListener('error', () => {
+          bgVid.style.display = 'none';
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/* ==========================================================================
+   NEON GLOW & FLICKER STYLES
+   ========================================================================== */
+
+.neon-title {
+  font-family: var(--font-serif);
+  font-size: 26px;
+  line-height: 1.35;
+  text-align: center;
+  font-weight: 700;
+  color: #fffafc;
+  text-shadow:
+    0 0 4px #ffffff,
+    0 0 10px #ff7da7,
+    0 0 20px #ff4081,
+    0 0 35px #e040fb,
+    0 0 60px #7c4dff,
+    0 0 90px #ff4081;
+  letter-spacing: 0.02em;
+  margin-bottom: 20px;
+  position: relative;
+  display: inline-block;
+  animation: neonFlicker 6s infinite alternate;
+}
+
+.neon-subtext {
+  color: #fdf2f8;
+  text-shadow:
+    0 0 6px rgba(255, 125, 167, 0.8),
+    0 0 15px rgba(224, 64, 251, 0.5);
+}
+
+.neon-badge {
+  text-shadow: 0 0 8px rgba(255, 125, 167, 0.6);
+  box-shadow: 0 0 15px rgba(255, 125, 167, 0.35), inset 0 0 10px rgba(255, 125, 167, 0.2);
+}
+
+/* Natural neon flicker effect */
+@keyframes neonFlicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    text-shadow:
+      0 0 4px #ffffff,
+      0 0 10px #ff7da7,
+      0 0 20px #ff4081,
+      0 0 35px #e040fb,
+      0 0 60px #7c4dff,
+      0 0 90px #ff4081;
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    text-shadow:
+      0 0 2px #ffffff,
+      0 0 5px #ff7da7,
+      0 0 10px #ff4081;
+    opacity: 0.88;
+  }
+}
+
+/* Gentle breathing pulse for secondary glowing titles */
+.neon-pulse {
+  animation: glowPulse 3s ease-in-out infinite alternate;
+}
+
+@keyframes glowPulse {
+  0% {
+    text-shadow:
+      0 0 4px #ffffff,
+      0 0 12px #ff7da7,
+      0 0 25px #c4a1ff;
+  }
+  100% {
+    text-shadow:
+      0 0 8px #ffffff,
+      0 0 22px #ff4081,
+      0 0 40px #e040fb,
+      0 0 70px #ff7da7;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .neon-title,
+  .neon-pulse {
+    animation: none !important;
+    text-shadow:
+      0 0 6px #ffffff,
+      0 0 16px #ff7da7,
+      0 0 30px #e040fb;
+  }
+}

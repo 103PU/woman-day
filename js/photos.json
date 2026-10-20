@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "filename": "vy-01.jpg",
+    "full": "assets/photos/full/vy-01.jpg",
+    "thumb": "assets/photos/thumb/vy-01.jpg",
+    "width": 1600,
+    "height": 1200,
+    "aspectRatio": 1.333,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 1",
+    "caption": "Kỷ niệm nhỏ xinh số 1"
+  },
+  {
+    "id": 2,
+    "filename": "vy-02.jpg",
+    "full": "assets/photos/full/vy-02.jpg",
+    "thumb": "assets/photos/thumb/vy-02.jpg",
+    "width": 900,
+    "height": 1600,
+    "aspectRatio": 0.562,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 2",
+    "caption": "Kỷ niệm nhỏ xinh số 2"
+  },
+  {
+    "id": 3,
+    "filename": "vy-03.jpg",
+    "full": "assets/photos/full/vy-03.jpg",
+    "thumb": "assets/photos/thumb/vy-03.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 3",
+    "caption": "Kỷ niệm nhỏ xinh số 3"
+  },
+  {
+    "id": 4,
+    "filename": "vy-04.jpg",
+    "full": "assets/photos/full/vy-04.jpg",
+    "thumb": "assets/photos/thumb/vy-04.jpg",
+    "width": 1600,
+    "height": 1198,
+    "aspectRatio": 1.336,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 4",
+    "caption": "Kỷ niệm nhỏ xinh số 4"
+  },
+  {
+    "id": 5,
+    "filename": "vy-05.jpg",
+    "full": "assets/photos/full/vy-05.jpg",
+    "thumb": "assets/photos/thumb/vy-05.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 5",
+    "caption": "Kỷ niệm nhỏ xinh số 5"
+  },
+  {
+    "id": 6,
+    "filename": "vy-06.jpg",
+    "full": "assets/photos/full/vy-06.jpg",
+    "thumb": "assets/photos/thumb/vy-06.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 6",
+    "caption": "Kỷ niệm nhỏ xinh số 6"
+  },
+  {
+    "id": 7,
+    "filename": "vy-07.jpg",
+    "full": "assets/photos/full/vy-07.jpg",
+    "thumb": "assets/photos/thumb/vy-07.jpg",
+    "width": 720,
+    "height": 1280,
+    "aspectRatio": 0.562,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 7",
+    "caption": "Kỷ niệm nhỏ xinh số 7"
+  },
+  {
+    "id": 8,
+    "filename": "vy-08.jpg",
+    "full": "assets/photos/full/vy-08.jpg",
+    "thumb": "assets/photos/thumb/vy-08.jpg",
+    "width": 1600,
+    "height": 1198,
+    "aspectRatio": 1.336,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 8",
+    "caption": "Kỷ niệm nhỏ xinh số 8"
+  },
+  {
+    "id": 9,
+    "filename": "vy-09.jpg",
+    "full": "assets/photos/full/vy-09.jpg",
+    "thumb": "assets/photos/thumb/vy-09.jpg",
+    "width": 1020,
+    "height": 1020,
+    "aspectRatio": 1.0,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 9",
+    "caption": "Kỷ niệm nhỏ xinh số 9"
+  },
+  {
+    "id": 10,
+    "filename": "vy-10.jpg",
+    "full": "assets/photos/full/vy-10.jpg",
+    "thumb": "assets/photos/thumb/vy-10.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 10",
+    "caption": "Kỷ niệm nhỏ xinh số 10"
+  },
+  {
+    "id": 11,
+    "filename": "vy-11.jpg",
+    "full": "assets/photos/full/vy-11.jpg",
+    "thumb": "assets/photos/thumb/vy-11.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 11",
+    "caption": "Kỷ niệm nhỏ xinh số 11"
+  },
+  {
+    "id": 12,
+    "filename": "vy-12.jpg",
+    "full": "assets/photos/full/vy-12.jpg",
+    "thumb": "assets/photos/thumb/vy-12.jpg",
+    "width": 900,
+    "height": 1600,
+    "aspectRatio": 0.562,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 12",
+    "caption": "Kỷ niệm nhỏ xinh số 12"
+  },
+  {
+    "id": 13,
+    "filename": "vy-13.jpg",
+    "full": "assets/photos/full/vy-13.jpg",
+    "thumb": "assets/photos/thumb/vy-13.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 13",
+    "caption": "Kỷ niệm nhỏ xinh số 13"
+  },
+  {
+    "id": 14,
+    "filename": "vy-14.jpg",
+    "full": "assets/photos/full/vy-14.jpg",
+    "thumb": "assets/photos/thumb/vy-14.jpg",
+    "width": 1200,
+    "height": 1600,
+    "aspectRatio": 0.75,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 14",
+    "caption": "Kỷ niệm nhỏ xinh số 14"
+  },
+  {
+    "id": 15,
+    "filename": "vy-15.jpg",
+    "full": "assets/photos/full/vy-15.jpg",
+    "thumb": "assets/photos/thumb/vy-15.jpg",
+    "width": 1600,
+    "height": 1200,
+    "aspectRatio": 1.333,
+    "alt": "Hạ Vy, kỷ niệm nhỏ xinh số 15",
+    "caption": "Kỷ niệm nhỏ xinh số 15"
+  }
+]

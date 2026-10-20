@@ -1,0 +1,354 @@
+/* ==========================================================================
+   CSS TOKENS, TYPOGRAPHY & CORE LAYOUT (PHASE 3 ENHANCED)
+   ========================================================================== */
+
+/* 1. LOCAL FONTS */
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('../assets/fonts/BeVietnamPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('../assets/fonts/BeVietnamPro-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('../assets/fonts/BeVietnamPro-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Be Vietnam Pro';
+  src: url('../assets/fonts/BeVietnamPro-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  src: url('../assets/fonts/PlayfairDisplay-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Dancing Script';
+  src: url('../assets/fonts/DancingScript-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* 2. DESIGN TOKENS */
+:root {
+  --bg-dark-1: #0f0822;
+  --bg-dark-2: #220d3f;
+  --bg-dark-3: #391353;
+  --bg-gradient: linear-gradient(175deg, #0f0822 0%, #200c3b 45%, #381254 100%);
+  
+  --primary-pink: #ff7da7;
+  --primary-pink-light: #ffadc8;
+  --primary-pink-dark: #e64980;
+  --lavender: #c4a1ff;
+  --baby-blue: #8fd3ff;
+  --cream-gold: #ffe3a8;
+  --paper-cream: #fff7f4;
+  --text-dark: #2a1145;
+  --text-light: #ffffff;
+  --text-muted: rgba(255, 255, 255, 0.72);
+  --text-faint: rgba(255, 255, 255, 0.45);
+
+  --font-serif: 'Playfair Display', Georgia, serif;
+  --font-sans: 'Be Vietnam Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-handwriting: 'Dancing Script', cursive;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+  --app-max-width: 440px;
+}
+
+/* 3. RESET & BASE */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: var(--bg-dark-1);
+  color: var(--text-light);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.6;
+  overflow: hidden;
+  user-select: none;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 4. APP VIEWPORT WRAPPER */
+#app {
+  width: 100%;
+  height: 100%;
+  max-width: var(--app-max-width);
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-gradient);
+  box-shadow: 0 0 80px rgba(0, 0, 0, 0.75);
+}
+
+@media (min-width: 500px) {
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle at center, #23123d 0%, #0c0618 100%);
+    padding: 16px;
+  }
+  #app {
+    height: 94dvh;
+    border-radius: 40px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+  }
+}
+
+/* 5. MULTI-LAYER BACKGROUND STACK */
+#bgStack {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+#bgVideo {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.32;
+  filter: saturate(1.2) brightness(0.8);
+  transition: opacity 1s ease;
+  z-index: 1;
+}
+
+#bgCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.bg-overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 50% 30%, transparent 20%, rgba(15, 8, 34, 0.75) 85%),
+              linear-gradient(180deg, rgba(15, 8, 34, 0.45) 0%, transparent 40%, rgba(15, 8, 34, 0.82) 100%);
+  z-index: 3;
+}
+
+.bg-par-flower {
+  position: absolute;
+  pointer-events: none;
+  filter: blur(14px) drop-shadow(0 0 20px rgba(255, 125, 167, 0.35));
+  opacity: 0.28;
+  z-index: 4;
+  animation: floatParallax 12s ease-in-out infinite alternate;
+}
+.bg-flower-1 {
+  top: 15%;
+  right: -25px;
+  width: 160px;
+  height: 160px;
+}
+.bg-flower-2 {
+  bottom: 25%;
+  left: -35px;
+  width: 190px;
+  height: 190px;
+  animation-duration: 16s;
+  animation-delay: -4s;
+}
+
+#particleCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 20;
+}
+
+/* 6. FIXED HEADER & FOOTER */
+#topHeader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: calc(54px + var(--safe-top));
+  padding-top: var(--safe-top);
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 30;
+  pointer-events: none;
+}
+#topHeader > * {
+  pointer-events: auto;
+}
+
+.brand-badge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary-pink-light);
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+.brand-badge .badge-icon {
+  font-size: 12px;
+  animation: spinSlow 14s linear infinite;
+}
+
+.music-toggle {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.2s, background 0.2s;
+}
+.music-toggle:active {
+  transform: scale(0.9);
+}
+.music-toggle.playing .music-icon {
+  animation: pulseBeat 1.8s ease-in-out infinite;
+  color: var(--primary-pink);
+}
+.music-wave {
+  position: absolute;
+  inset: -3px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-pink);
+  opacity: 0;
+  pointer-events: none;
+}
+.music-toggle.playing .music-wave {
+  animation: waveOut 2.4s ease-out infinite;
+}
+
+#bottomFooter {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: calc(34px + var(--safe-bottom));
+  padding-bottom: var(--safe-bottom);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  z-index: 30;
+  pointer-events: none;
+}
+
+/* 7. SCREEN CONTAINER & FLOW */
+#screensContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.screen {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 68px 24px 38px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(18px) scale(0.98);
+  transition: opacity 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.6s cubic-bezier(0.16, 1, 0.3, 1),
+              visibility 0.6s;
+  pointer-events: none;
+}
+
+.screen.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0) scale(1);
+  pointer-events: auto;
+}
+
+#screen5 {
+  justify-content: flex-start;
+  overflow-y: auto;
+  overflow-x: hidden;
+  -webkit-overflow-scrolling: touch;
+  padding-top: calc(64px + var(--safe-top));
+  padding-bottom: calc(85px + var(--safe-bottom));
+  scroll-behavior: smooth;
+}
+#screen5::-webkit-scrollbar {
+  width: 4px;
+}
+#screen5::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 4px;
+}
+
+/* 8. GLOBAL ANIMATIONS */
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+@keyframes pulseBeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+@keyframes waveOut {
+  0% { transform: scale(0.9); opacity: 0.8; }
+  100% { transform: scale(1.6); opacity: 0; }
+}
+@keyframes floatParallax {
+  0% { transform: translate(0, 0) rotate(0deg); }
+  100% { transform: translate(-15px, 20px) rotate(12deg); }
+}

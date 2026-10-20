@@ -1,0 +1,22 @@
+{
+  "results": {
+    "responsive_overflow": true,
+    "screen2_transition": true,
+    "passcode_rescue": true,
+    "hold_early_release_canceled": true,
+    "hold_unlock_screen4": true,
+    "title_exact_match": true,
+    "letter_exact_match": true,
+    "screen5_transition": true,
+    "photo_count_15": true,
+    "sweet_toast": true,
+    "voucher_flip": true,
+    "easter_egg_secret": true,
+    "garden_svg_fallback": true,
+    "reduced_motion_ready": true,
+    "console_errors_zero": true,
+    "external_requests_zero": true
+  },
+  "consoleErrors": [],
+  "externalRequests": []
+}
